@@ -3,12 +3,12 @@
 # 2019-05-29
 
 rm(list=ls()) #remove old values to avoid troubles
-setwd('~/Nextcloud/Documents/Projects/Metabolism/resourceAllocation/code/')
+setwd("C:\\Users\\isabe\\OneDrive\\Documentos\\GitHub\\resourceallocation\\code")
 
 library(deSolve)
 source('functions.R')  # contains BM periodic waves and the function running the simulations
 source('models.R')     # contains the ODE model
-source('visualize.R')  # contains the plotting functions
+source('../src/visualize.R')  # contains the plotting functions
 
 
 ### set the values of states and parameters for all conditions ----
@@ -34,7 +34,7 @@ ibm_1<-run(condition = "iBM", state = s.par)
 ibm_2<-run(condition = "iBM + 2BM", state = s.par, params = p.2bm)
 
 #save this simulation as a 'control experiment'
-write.csv2(ibm_1, file = "../results/iBM_control.csv", row.names = FALSE)
+write.csv2(ibm_1, file = "..\\results\\iBM_control.csv", row.names = FALSE)
 
 ### 2. model a 'weak' mosquito ----
 w_bm_K<-run(condition = "K=0.5", state = s, params = my_replace(p.2bm,c(K=0.5)))

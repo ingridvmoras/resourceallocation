@@ -3,7 +3,7 @@
 # 2020-07-10
 
 rm(list=ls()) #remove old values to avoid troubles
-setwd('~/Nextcloud/Documents/Projects/Metabolism/resourceAllocation/code/')
+setwd("C:\\Users\\isabe\\OneDrive\\Documentos\\GitHub\\resourceallocation\\code")
 
 library(deSolve)
 library(dplyr)

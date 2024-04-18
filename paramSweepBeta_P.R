@@ -3,7 +3,7 @@
 # 2019-06-13
 
 rm(list=ls()) #remove old values to avoid troubles
-setwd('~/Nextcloud/Documents/Projects/Metabolism/resourceAllocation/src/')
+setwd("C:\\Users\\isabe\\OneDrive\\Documentos\\GitHub\\resourceallocation\\src")
 library(deSolve)
 library(dplyr)
 source('functions.R')  # contains BM periodic waves

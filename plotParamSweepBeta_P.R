@@ -4,7 +4,7 @@
 
 
 rm(list=ls()) #remove old values to avoid troubles
-setwd('~/Nextcloud/Documents/Projects/Metabolism/resourceAllocation/results/')
+setwd("C:\\Users\\isabe\\OneDrive\\Documentos\\GitHub\\resourceallocation\\coderesults")
 
 library(cowplot)
 library(dplyr)
