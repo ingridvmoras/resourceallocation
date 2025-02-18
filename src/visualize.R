@@ -1,10 +1,10 @@
 library(ggplot2)
 library(cowplot)
 library(viridis)
-library(plyr)
+
 # scales::show_col(viridis::viridis_pal()(50))  ---> to see which colors may be nice from the viridis pal
 
-visualize<-function(df, xlim =20, e20=FALSE, cum = FALSE)
+visualize<-function(df, xlim =30, e20=FALSE, cum = FALSE)
 {
   n <- length(unique(df$condition))*length(unique(df$type))
   maxEggs<-0.6

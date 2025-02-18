@@ -19,7 +19,7 @@ my_sigma<-function(t, T, delta, shift) #T: period of new blood meals (hours); de
 }
 
 ## function that runs the simulations, visualizes the results, and returns the data frame. -----
-run <- function(state = s, params = p,tmin = 0, tend = 20, condition = "")
+run <- function(state = s, params = p,tmin = 0, tend = 30, condition = "")
 {
   #set time vector
   t<-seq(from = 0, to = tend*24, by = 0.01)
@@ -125,7 +125,7 @@ calculateFitness<-function(parVector, df, var = "E", tend = 20)
   return(fitness)
 }
 
-calculateFitnessDifference<-function(parVector, df, control.df, var ="E", setting = "", tend = 20)
+calculateFitnessDifference<-function(parVector, df, control.df, var ="E", setting = "", tend = 30)
 {
   control.df.fit<-calculateFitness(parVector, control.df, var = var, tend = tend)
   df.fit<-calculateFitness(parVector, df, var = var, tend = tend)
@@ -134,7 +134,7 @@ calculateFitnessDifference<-function(parVector, df, control.df, var ="E", settin
   return(out)
 }
 
-calculateFitnessFoldDifference<-function(parVector, df, control.df, var ="E", setting = "", tend = 20)
+calculateFitnessFoldDifference<-function(parVector, df, control.df, var ="E", setting = "", tend = 30)
 {
   control.df.fit<-calculateFitness(parVector, control.df, var = var, tend = tend)
   df.fit<-calculateFitness(parVector, df, var = var, tend = tend)

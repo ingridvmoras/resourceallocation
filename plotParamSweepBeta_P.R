@@ -10,7 +10,7 @@ library(cowplot)
 library(dplyr)
 library(RColorBrewer)
 
-source('../src/visualize.R')  # contains the plotting functions
+source('..\\src\\visualize.R')  # contains the plotting functions
 
 #files containing the data
 nm<-list.files(pattern = "betaP_")
